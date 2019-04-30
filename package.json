@@ -1,0 +1,27 @@
+{
+  "name": "full-stack-solo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/developingMeaghan/full-stack-solo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/developingMeaghan/full-stack-solo/issues"
+  },
+  "homepage": "https://github.com/developingMeaghan/full-stack-solo#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "jest": "^24.7.1",
+    "knex": "^0.16.5",
+    "nodemon": "^1.18.11",
+    "sqlite3": "^4.0.6"
+  }
+}
