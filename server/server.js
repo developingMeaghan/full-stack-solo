@@ -8,7 +8,9 @@ server.use(express.json())
 
 //static file server middleware
 server.use(express.static('./public'))
-
+server.set('json spaces', 4);
 server.use('/api/magic' , magicRoutes)
+
+
 
 module.exports = server

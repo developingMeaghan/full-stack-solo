@@ -10,7 +10,7 @@ router.get('/', (req,res) =>{
     })
     .catch(err => {
         console.error(err)
-        res.setStatus(500).json({error : 'something is broken'})
+        res.sendStatus(500).json({error : 'something is broken'})
     })
 })
 
