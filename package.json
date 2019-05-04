@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon server",
+    "dev": "nodemon server & webpack --watch",
     "start": "node server",
     "test": "jest --watchAll"
   },
@@ -15,16 +15,32 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "modules": false
+        }
+      ],
+      "@babel/preset-react"
+    ]
+  },
   "bugs": {
     "url": "https://github.com/developingMeaghan/full-stack-solo/issues"
   },
   "homepage": "https://github.com/developingMeaghan/full-stack-solo#readme",
   "dependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
     "express": "^4.16.4",
     "jest": "^24.7.1",
     "knex": "^0.16.5",
     "nodemon": "^1.18.11",
     "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "react-redux": "^7.0.3",
     "redux": "^4.0.1",
     "redux-thunk": "^2.3.0",
